@@ -1,17 +1,15 @@
-cdt_name:
-- cos7
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 docker_image:
-- quay.io/condaforge/linux-anvil-ppc64le
+- quay.io/condaforge/linux-anvil-aarch64:alma10
 fortran_compiler:
 - gfortran
 fortran_compiler_version:
-- '10'
+- '15'
 numpy:
-- '1.23'
+- '2'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -19,7 +17,4 @@ pin_run_as_build:
 python:
 - 3.11.* *_cpython
 target_platform:
-- linux-ppc64le
-zip_keys:
-- - python
-  - numpy
+- linux-aarch64
